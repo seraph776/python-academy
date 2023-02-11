@@ -46,3 +46,15 @@ class Person:
 ## InitVar
 
 `InitVar` lets you specify a field that will be passed to `__init__` and then to `__post_init__`, but won’t be stored in the class instance.By using `InitVar`, you can take in parameters when setting up the dataclass that are only used during initialization.
+
+
+## Inheritance
+
+```python
+
+@dataclass
+class Student(Person):
+    grade: int
+    subjects: list
+```
+
